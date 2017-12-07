@@ -5,6 +5,11 @@
 html,body{
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
+}
+body{
+	padding-bottom: 1.8rem;
+	box-sizing: border-box;
 }
 @font-face {
   font-family: 'iconfont';
@@ -16,7 +21,7 @@ html,body{
 }
 .i{
   font-family:"iconfont" !important;
-  font-size:16px;font-style:normal;
+  font-style:normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
@@ -53,7 +58,7 @@ header #btn{
 	box-sizing: border-box;
 	text-align: center;
 	line-height: 2rem;
-	border: 1px solid #FFFFFF;
+	border: 0;
 	border-radius: 50%;
 	background: rgba(0,0,0,.5);
 	position: absolute;
@@ -80,6 +85,7 @@ article{
 article>p{
 	width: 100%;
 	height: 1.4rem;
+	padding-left: 0.5rem;
 	font-size: 0.64rem;
 	text-align: left;
 	line-height: 1.4rem;
@@ -93,8 +99,10 @@ article>div{
 }
 .ti{
 	display: block;
+	width: auto;
 	height: 1rem;
-	font-size: 0.2rem;
+	padding-left: 0.5rem;
+	font-size: 0.4rem;
 	text-align: left;
 	line-height: 1rem;
 	color: #9f9f9f;
@@ -116,7 +124,7 @@ article>div{
 	line-height: 0.8rem;
 	position: absolute;
 	top: 0;
-	right: 2.1rem;
+	right: 2.3rem;
 }
 .say i,
 .eye i,
@@ -124,9 +132,9 @@ article>div{
 .eye span{
 	display: inline-block;
 	width: auto;
-	height: 0.4rem;
-	font-size: 0.4rem;
-	line-height: 0.4rem;
+	height: 0.6rem;
+	font-size: 0.6rem;
+	line-height: 0.6rem;
 	color: #9f9f9f;
 }
 .say i,
@@ -134,7 +142,29 @@ article>div{
 	margin-right: 0.2rem;
 }
 
-
+.main-out{
+	
+}
+.main{
+	width: 100%;
+	height: 100%;
+	padding-bottom: 1.8rem;
+	overflow: auto;
+	overflow-y: visible;
+	/*padding: 0.1rem;*/
+	/*overflow: auto;*/
+}
+/*.main:before,
+.main:after{
+	content: "";
+	display: table;
+}*/
+.main:after{
+	clear: both;
+}
+.main::-webkit-scrollbar{
+	display: none;
+}
 .follow{
 	width: 100%;
 	height: 2rem;
@@ -204,6 +234,11 @@ article>div{
 	display: block;
 	float: left;
 }
+.about-video section .ti{
+	padding: 0;
+	width: 4rem;
+	top: 0.14rem;
+}
 .about-video section>div{
 	width: 9rem;
 	height: 3.8rem;
@@ -242,7 +277,7 @@ article>div{
 	position: relative;
 }
 .hot-talk .left{
-	width: 50%;
+	width: 100%;
 	height: 2.48rem;
 	padding-left: 0.5rem;
 	position: absolute;
@@ -258,7 +293,7 @@ article>div{
 }
 .hot-talk .left-top{
 	float: left;
-	width: 5.6rem;
+	width: 7rem;
 	height: 2.48rem;
 }
 .hot-talk .left-top div{
@@ -272,7 +307,7 @@ article>div{
 	float: left;
 	width: auto;
 	height: 1.4rem;
-	font-size: 0.5rem;
+	font-size: 0.7rem;
 	color: #148ad3;
 	text-align: left;
 	line-height: 1.4rem;
@@ -280,6 +315,7 @@ article>div{
 }
 .hot-talk .left-top div span{
 	display: block;
+	font-size: 0.5rem;
 	color: #a1a1a1;
 	margin: 0;
 }
@@ -291,17 +327,23 @@ article>div{
 	line-height: 0.8rem;
 }
 .hot-talk .right{
-	width: 1.4rem;
+	width: 1.8rem;
 	height: 1.4rem;
 	line-height: 1rem;
 	position: absolute;
 	top: 0;
 }
+.hot-talk li .give{
+	right: 2.6rem;
+}
+.hot-talk li .comment{
+	right: 0.5rem;
+}
 .hot-talk .right i,
 .hot-talk .right span{
 	width: auto;
 	height: 1.4rem;
-	font-size: 0.5rem;
+	font-size: 0.6rem;
 	color: #a1a1a1;
 }
 .hot-talk .right i{
@@ -313,7 +355,9 @@ footer{
 	width: 100%;
 	height: 1.8rem;
 	border-top: 1px solid #e6e6e6;
-	position: relative;
+	padding-left: 0.8rem;
+	background: #fff;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 }
@@ -326,7 +370,7 @@ footer ul li{
 	float: left;
 	width: auto;
 	height: 1.8rem;
-	margin: 0 0.9rem;
+	margin: 0 0.7rem;
 	font-size: 0.9rem;
 	color: #333;
 	text-align: center;
