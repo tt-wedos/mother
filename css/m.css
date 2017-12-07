@@ -86,6 +86,7 @@ article>p{
 	width: 100%;
 	height: 1.4rem;
 	padding-left: 0.5rem;
+	box-sizing: border-box;
 	font-size: 0.64rem;
 	text-align: left;
 	line-height: 1.4rem;
@@ -148,9 +149,9 @@ article>div{
 .main{
 	width: 100%;
 	height: 100%;
-	padding-bottom: 1.8rem;
+	/*padding-bottom: 1.8rem;*/
 	overflow: auto;
-	overflow-y: visible;
+	/*overflow-y: visible;*/
 	/*padding: 0.1rem;*/
 	/*overflow: auto;*/
 }
@@ -354,12 +355,13 @@ article>div{
 footer{
 	width: 100%;
 	height: 1.8rem;
+	box-sizing: border-box;
 	border-top: 1px solid #e6e6e6;
 	padding-left: 0.8rem;
 	background: #fff;
-	position: fixed;
+	/*position: fixed;
 	left: 0;
-	bottom: 0;
+	bottom: 0;*/
 }
 footer ul{
 	width: 100%;
