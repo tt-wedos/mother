@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalabel=no" />
+		<script type="text/javascript">
+			document.documentElement.style.fontSize=innerWidth/15+"px"		
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/m.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="m-video">
+				<video controls id="v">
+					<source src="video/movie.mp4"></source>
+				</video>
+				<button id="btn"><i class="i" id="btnI">&#xe6ca;</i></button>
+			</div>
+			<article>
+				<p>母亲节： 爱是长情，需要我们认真陪伴</p>
+				<div>
+					<span class="ti">法网视频</span>
+					<div class="eye"><i class="i">&#xe626;</i><span>356</span></div>
+					<div class="say"><i class="i">&#xe600;</i><span>56</span></div>
+				</div>
+			</article>
+		</header>
+		<section class="follow">
+			<img src="img/视频详情_03.jpg"/>
+			<div>关注</div>
+		</section>
+		<div class="height20"></div>
+		<section class="about-video">
+			<p>相关视频</p>
+			<section>
+				<img src="img/视频详情_06.jpg"/>
+				<div>
+					<p>感恩母亲节</p>
+					<div>
+						<div class="ti" style="width: 3.2rem;top: 0.14rem;"><div class="say"><i class="i">&#xe63c;</i><span>30分钟前</span></div></div>
+						<div class="eye"><i class="i">&#xe626;</i><span>356</span></div>
+						<div class="say"><i class="i">&#xe600;</i><span>56</span></div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img src="img/视频详情_09.jpg"/>
+				<div>
+					<p>献给父亲节</p>
+					<div>
+						<div class="ti" style="width: 3.2rem;top: 0.14rem;"><div class="say"><i class="i">&#xe63c;</i><span>50分钟前</span></div></div>
+						<div class="eye"><i class="i">&#xe626;</i><span>356</span></div>
+						<div class="say"><i class="i">&#xe600;</i><span>56</span></div>
+					</div>
+				</div>
+			</section>
+			<div class="look-more">查看更多  <i class="i">&#xe602;</i></div>
+		</section>
+		<div class="height20"></div>
+		<section class="hot-talk">
+			<p>热门评论</p>
+			<ul>
+				<li>
+					<div class="left">
+						<img src="img/视频详情_11.jpg"/>
+						<div class="left-top">
+							<div><h5>红花绿叶</h5><span>05-09 06:23</span></div>
+							<p>母亲节快乐</p>
+						</div>
+					</div>
+					<div class="right" style="right: 3.6rem;"><i class="i">&#xe648;</i><span> 59</span></div>
+					<div class="right" style="right: 0.5rem;"><i class="i">&#xe625;</i><span> 40</span></div>
+				</li>
+				<li>
+					<div class="left">
+						<img src="img/视频详情_15.jpg"/>
+						<div class="left-top">
+							<div><h5>花红柳绿</h5><span>05-08 15:21</span></div>
+							<p>感恩</p>
+						</div>
+					</div>
+					<div class="right" style="right: 3.6rem;"><i class="i">&#xe648;</i><span> 69</span></div>
+					<div class="right" style="right: 0.5rem;"><i class="i">&#xe625;</i><span> 5</span></div>
+				</li>
+				<li>
+					<div class="left">
+						<img src="img/视频详情_18.png"/>
+						<div class="left-top">
+							<div><h5>春意盎然</h5><span>05-05 12:23</span></div>
+							<p>感谢妈妈！</p>
+						</div>
+					</div>
+					<div class="right" style="right: 3.6rem;"><i class="i">&#xe648;</i><span> 60</span></div>
+					<div class="right" style="right: 0.5rem;"><i class="i">&#xe625;</i><span> 45</span></div>
+				</li>
+			</ul>
+		</section>
+		<footer>
+			<ul>
+				<li><i class="i">&#xe6fd;</i><span>写评论</span></li>
+				<li><i class="i">&#xe600;</i><span>2456</span></li>
+				<li><i class="i">&#xe696;</i></li>
+				<li><i class="i">&#xe601;</i></li>
+				<li><i class="i">&#xe6bc;</i></li>
+			</ul>
+		</footer>
+	</body>
+</html>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+		var video = document.getElementsByTagName('video')[0];
+		var btn = document.getElementById("btn");
+		var btnI = document.getElementById("btnI");
+		
+		var flag = true;
+		
+		btn.onclick=function(){
+			btn.style.display="none"
+			video.play();/*JS控制视频播放*/
+//			btnI.innerText = "";
+//			btnI.innerText = "&#xe620;"
+		}
+		video.onclick=function(){
+			video.pause();/*JS控制视频暂停*/ 
+			btn.style.display="block";
+//			btnI.innerText = "";
+//			btnI.innerText = "&#xe6ca;"
+		}
+	</script>
